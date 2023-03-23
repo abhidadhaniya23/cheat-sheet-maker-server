@@ -1,47 +1,22 @@
 # Cheat-sheet maker
 
-A fullstack application to create and share tabulated cheat sheets using markdown syntax. The backend is developed with node-JS, express-JS and mongo-db while the frontend is developed with React.
-
 **[Checkout the website](https://cheatsheet-maker.herokuapp.com/)**.
 
-## Features
+A fullstack application to create and share tabulated cheat sheets using markdown syntax. The backend is developed with node-JS, express-JS and mongo-db while the frontend is developed with React.
 
-- Browse sheets made by others
-- Sheet making and editing
-- Syntax highlighting with various languages
-- Authentication
-- Fully Responsive on mobile screens (although creating sheets is not very practical on small screens).
+Visit the client repository [here](https://github.com/abhidadhaniya23/cheat-sheets-maker-client).
 
-## Screenshots
+All credits for the design, frontend application part and backend api of the website go to [Mohamad Tarhini](https://github.com/mdtarhini)
 
-**Home Page**
+### Why this project?
 
-![Home page screenshot](/screenshots/home-page.png?raw=true)
-
-**Sheet maker**
-
-![Sheet maker screenshot](/screenshots/sheet-maker.png?raw=true)
-
-**sheet example**
-
-![example sheet screenshot](/screenshots/sheet.png?raw=true)
-
-## Local testing
-
-The project is divided into two parts, the server handles the backend and mongoDB access; and the client where the react frontend is implemented. To run the application locally, clone this repository and run `npm install` both in the main directory and in the client directory. Once the package installation is done, run `npm run dev` which will use [concurrently](https://www.npmjs.com/package/concurrently) and run/watch for modifications in the client and the server simultaneously.
+- This project was created by [Mohamad Tarhini](https://mdtarhini.com/)
+- Since this was a very popular project and many people are using it for their own purposes but unfortunately, we can not able to access the web application. So I decided to host this project on my own.
+- Heroku is no longer free for hosting NodeJs applications. So I decided to host this popular cheatsheet maker on (Vercel)[https://vercel.com/].
+- Also, I mentioned (client repository)[https://github.com/abhidadhaniya23/cheat-sheets-maker-client] link above. If you want to contribute to the client side of the project, you can do that there.
 
 ### Environment variables
 
 - After creating a mongoDB cluster, assign the connection string to the variable `dbURI` in `.env` (create the file if not already present) of the main directory.
 
 - You will also need to assign a value for the variable `jwtSecret` in `.env` which is needed by [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken#readme) used for generating web tokens.
-
-## Todo
-
-- Add rich text editor as an alternative to markdown
-- More theming options
-- Add search feature
-
-## keywords
-
-React-JS, node-JS, express, redux, react-router, mongoDB, axios, markdown.
