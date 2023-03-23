@@ -4,25 +4,25 @@ const dotenv = require("dotenv");
 const app = express();
 dotenv.config();
 
-// Bodyparse middleware
+// Body parse middleware
 app.use(express.json());
 
 // connect to Mongo
-mongoose
-  .connect(process.env.dbURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  })
-  .then(() => {
-    console.log("Succesfully connected to db");
-  })
-  .catch((err) => console.log(err));
+// mongoose
+//   .connect(process.env.dbURI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false,
+//   })
+//   .then(() => {
+//     console.log("Successfully connected to db");
+//   })
+//   .catch((err) => console.log(err));
 
-//Middleware api routes
-app.use("/api/users", require("./routes/api/users"));
-app.use("/api/sheets", require("./routes/api/sheets"));
+// //Middleware api routes
+// app.use("/api/users", require("./routes/api/users"));
+// app.use("/api/sheets", require("./routes/api/sheets"));
 
 app.get("/", (req, res) => {
   res.status(200).json({

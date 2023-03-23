@@ -8,9 +8,9 @@
     "dev": "nodemon server.js"
   },
   "keywords": [
-    "React",
     "Node",
-    "Express"
+    "Express",
+    "REST Api"
   ],
   "author": "",
   "license": "ISC",
