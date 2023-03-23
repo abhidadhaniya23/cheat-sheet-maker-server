@@ -24,5 +24,12 @@ mongoose
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/sheets", require("./routes/api/sheets"));
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Server is running successfully",
+  });
+});
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`server started on port ${port}`));
