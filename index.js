@@ -2,10 +2,19 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const app = express();
+const cors = require("cors");
 dotenv.config();
 
 // Body parse middleware
 app.use(express.json());
+
+// Cors middleware config
+// var corsOptions = {
+//   origin: "http://example.com",
+//   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+// };
+// app.use(cors(corsOptions));
+app.use(cors());
 
 // connect to Mongo
 mongoose
