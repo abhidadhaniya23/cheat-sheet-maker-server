@@ -12,8 +12,8 @@ All credits for the design, frontend application part and backend api of the web
 
 - This project was created by [Mohamad Tarhini](https://mdtarhini.com/)
 - Since this was a very popular project and many people are using it for their own purposes but unfortunately, we can not able to access the web application. So I decided to host this project on my own.
-- Heroku is no longer free for hosting NodeJs applications. So I decided to host this popular cheatsheet maker on (Vercel)[https://vercel.com/].
-- Also, I mentioned (client repository)[https://github.com/abhidadhaniya23/cheat-sheets-maker-client] link above. If you want to contribute to the client side of the project, you can do that there.
+- Heroku is no longer free for hosting NodeJs applications. So I decided to host this popular cheatsheet maker on [Vercel](https://vercel.com/).
+- Also, I mentioned [client repository](https://github.com/abhidadhaniya23/cheat-sheets-maker-client) link above. If you want to contribute to the client side of the project, you can do that there.
 
 ### Environment variables
 
