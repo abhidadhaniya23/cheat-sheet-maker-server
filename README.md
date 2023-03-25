@@ -4,7 +4,7 @@
 
 A fullstack application to create and share tabulated cheat sheets using markdown syntax. The backend is developed with node-JS, express-JS and mongo-db while the frontend is developed with React.
 
-Visit the client repository [here](https://github.com/abhidadhaniya23/cheat-sheets-maker-client).
+Visit the client repository [here](https://github.com/abhidadhaniya23/cheatsheets-maker-client).
 
 All credits for the design, frontend application part and backend api of the website go to [Mohamad Tarhini](https://github.com/mdtarhini)
 
